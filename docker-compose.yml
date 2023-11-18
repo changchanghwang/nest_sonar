@@ -17,6 +17,7 @@ services:
       - DB_PORT=3306
       - DB_USER=root
       - DB_PASSWORD=1234
+      - SALT_ROUNDS=10
     ports:
       - "3000:3000"
     restart: always
