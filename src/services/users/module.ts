@@ -1,27 +1,10 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
-import { nanoid } from 'nanoid';
+import { Module } from '@nestjs/common';
+import { UserController } from './presentation/controller';
+import { UserService } from './application/service';
 
-type CtorType = {
-  email: string;
-  password: string;
-};
-
-@Entity()
-export class User {
-  @PrimaryColumn()
-  id!: string;
-
-  @Column()
-  email!: string;
-
-  @Column()
-  password!: string;
-
-  constructor(args: CtorType) {
-    if (args) {
-      this.id = nanoid(10);
-      this.email = args.email;
-      this.password = args.password;
-    }
-  }
-}
+@Module({
+  imports: [],
+  controllers: [UserController],
+  providers: [UserService],
+})
+export class UserModule {}
