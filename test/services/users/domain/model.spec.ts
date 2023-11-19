@@ -3,7 +3,7 @@ import { User } from '../../../../src/services/users/domain/model';
 import { hashPassword } from '../../../../src/libs/security';
 
 jest.mock('nanoid');
-jest.mock('../../../libs/security');
+jest.mock('../../../../src/libs/security');
 
 describe('User 도메인 테스트', () => {
   beforeEach(() => {
