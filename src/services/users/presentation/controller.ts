@@ -9,7 +9,7 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post('/signup')
-  async signUp(@Body() body: SignUpBodyDto): Promise<void> {
+  async signup(@Body() body: SignUpBodyDto): Promise<void> {
     const { email, password } = body;
     await this.userService.signUp({
       email,
