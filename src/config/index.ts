@@ -3,6 +3,7 @@ import { ormConfig } from './ormconfig';
 
 const doc = {
   port: { $env: 'PORT' },
+  saltRounds: { $env: 'SALT_ROUNDS' },
   ormConfig,
 };
 
