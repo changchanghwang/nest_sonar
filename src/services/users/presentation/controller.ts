@@ -8,7 +8,7 @@ import { SignUpBodyDto } from '../dto';
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
-  @Post('/sign-up')
+  @Post('/signup')
   async signUp(@Body() body: SignUpBodyDto): Promise<void> {
     const { email, password } = body;
     await this.userService.signUp({

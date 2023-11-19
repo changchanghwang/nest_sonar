@@ -11,6 +11,7 @@ services:
     build:
       context: .
     environment:
+      - PORT=3000
       - NODE_ENV=development
       - DB_NAME=study
       - DB_HOST=db
