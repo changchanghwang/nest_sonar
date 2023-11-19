@@ -4,7 +4,7 @@ import {
   NotImplementedException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { badRequest, forbidden, notImplemented, unauthorized } from './exceptions';
+import { badRequest, forbidden, notImplemented, unauthorized } from '../../../src/libs/exception/exceptions';
 
 describe('Exception 테스트', () => {
   describe('badRequest', () => {

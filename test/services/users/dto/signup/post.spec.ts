@@ -1,6 +1,6 @@
 import { validate } from 'class-validator';
 import { plainToInstance } from 'class-transformer';
-import { SignUpBodyDto } from './post';
+import { SignUpBodyDto } from '../../../../../src/services/users/dto/signup/post';
 
 describe('post dto 테스트', () => {
   test('CreateBodyDto 테스트', async () => {

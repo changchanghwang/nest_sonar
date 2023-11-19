@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
-import { User } from './model';
-import { hashPassword } from '../../../libs/security';
+import { User } from '../../../../src/services/users/domain/model';
+import { hashPassword } from '../../../../src/libs/security';
 
 jest.mock('nanoid');
 jest.mock('../../../libs/security');
